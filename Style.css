@@ -1,0 +1,426 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.nav {
+    padding: 10px 20px;
+}
+
+.logo-link {
+    text-decoration: none;
+}
+
+.logo-text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    letter-spacing: 0.45em;
+    color: #111827;
+    position: relative;
+}
+
+.logo-text::after {
+    display: none !important;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #1f2937;
+    text-decoration: none;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 50%;
+    bottom: -6px;
+    background-color: #000;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 14px;
+    border-radius: 999px;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+}
+
+.search-input {
+    width: 260px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.icon-btn {
+    padding: 8px;
+    border-radius: 999px;
+    color: #111827;
+    transition: background 0.25s ease;
+}
+
+.icon-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.home .hero {
+    background-image: url('https://i.pinimg.com/1200x/05/16/14/051614f29a284ebd6e1c97f2ef2cdfd8.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center calc(50% + 100px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    line-height: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.hero-cta {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 420px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-cta:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.brand-title {
+    font-size: 80px;
+    font-weight: 300;
+    letter-spacing: 0.4em;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 40px;
+}
+
+.about-section {
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.about-image {
+    width: 35%;
+    min-height: 520px;
+    background-image: url("https://i.pinimg.com/736x/18/3a/02/183a02e7c4618664ff44a94fe6dc4fbd.jpg");
+    background-size: cover;
+    background-position: center calc(50% + 20px);
+    border-radius: 18px;
+}
+
+.about-info {
+    width: 65%;
+}
+
+.about-heading {
+    font-size: 56px;
+    line-height: 1.05;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    color: #111827;
+}
+
+.about-details {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.about-box h2 {
+    font-size: 14px;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    margin-bottom: 14px;
+    color: #111;
+}
+
+.about-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4b5563;
+    max-width: 260px;
+}
+
+.divider {
+    width: 1px;
+    height: 120px;
+    background-color: #e5e7eb;
+}
+
+.values-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    padding: 120px 80px;
+    background-color: #fafafa;
+}
+
+.value-box span {
+    font-size: 12px;
+    letter-spacing: 0.3em;
+    color: #9ca3af;
+}
+
+.value-box h3 {
+    margin: 16px 0 12px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    color: #111;
+}
+
+.value-box p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #4b5563;
+}
+
+
+.products-title {
+    font-size: 54px;
+    font-weight: 300;
+    letter-spacing: 0.35em;
+    color: #111827;
+    margin-bottom: 14px;
+}
+
+.products-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    color: #6b7280;
+    letter-spacing: 0.08em;
+}
+
+.products-tabs {
+    border-bottom: 1px solid #e5e7eb;
+    padding-bottom: 16px;
+}
+
+.product-tab {
+    padding: 10px 26px;
+    border: 1px solid #111;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.25em;
+    color: #111;
+    transition: all 0.3s ease;
+}
+
+.product-tab:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.product-tab-active {
+    background-color: #111;
+    color: #fff;
+}
+
+.product-content {
+    margin-top: 40px;
+}
+
+
+.men-products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.men-product-card {
+    cursor: pointer;
+}
+
+.men-product-img {
+    width: 100%;
+    height: 380px;
+    background-color: #f3f4f6;
+    overflow: hidden;
+}
+
+.men-product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.men-product-card:hover img {
+    transform: scale(1.08);
+}
+
+/* INFO */
+.men-product-info {
+    margin-top: 16px;
+}
+
+.men-product-info h6 {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    color: #111;
+    margin-bottom: 6px;
+}
+
+.men-product-info span {
+    font-size: 12px;
+    letter-spacing: 0.15em;
+    color: #6b7280;
+}
+
+.men-product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.men-product-bottom p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.men-product-bottom button {
+    border: 1px solid #111;
+    background: transparent;
+    padding: 6px 16px;
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.men-product-bottom button:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.login-page {
+    display: flex;
+    min-height: 100vh;
+    background-color: #fafafa;
+}
+
+.login-image {
+    width: 50%;
+    background-image: url("https://i.pinimg.com/1200x/b9/8a/22/b98a22d02c3d4384baf110d947d32368.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.login-form-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    width: 420px;
+}
+
+.login-form h1 {
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+.login-form p {
+    font-size: 14px;
+    letter-spacing: 0.12em;
+    color: #6b7280;
+    margin-bottom: 40px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 26px;
+}
+
+.input-group label {
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: 1px solid #111;
+    padding: 10px 4px;
+    font-size: 14px;
+    background: transparent;
+    outline: none;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 14px;
+    border: 1px solid #111;
+    background: transparent;
+    font-size: 13px;
+    letter-spacing: 0.3em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.login-footer {
+    margin-top: 30px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+}
+
+.login-footer a {
+    margin-left: 8px;
+    text-decoration: underline;
+    color: #111;
+}
