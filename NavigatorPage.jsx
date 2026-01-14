@@ -21,7 +21,7 @@ const NavigatorPage = () => {
                 <Route path='/Products' element={<Products />} >
                     <Route path="men-tshirts" element={<MenTshirts />} />
                     <Route path="men-shirts" element={<MenShirts />} />
-                    <Route path="men-jeans" element={<MenJeans />} />
+                    <Route path="men-watches" element={<MenJeans />} />
                     <Route path="men-shoes" element={<MenShoes />} />
                 </Route>
                 <Route path='/Login' element={<Login />} />

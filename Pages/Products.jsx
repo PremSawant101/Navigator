@@ -40,7 +40,7 @@ const Products = () => {
 
                     <li>
                         <NavLink
-                            to="men-jeans"
+                            to="men-watches"
                             className={({ isActive }) =>
                                 `product-tab ${isActive ? "product-tab-active" : ""}`
                             }

@@ -260,14 +260,15 @@ html {
     margin-top: 40px;
 }
 
-
 .men-products-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    justify-content: start;
+    gap: 40px;
 }
 
 .men-product-card {
+    max-width: 320px;
     cursor: pointer;
 }
 
@@ -289,7 +290,6 @@ html {
     transform: scale(1.08);
 }
 
-/* INFO */
 .men-product-info {
     margin-top: 16px;
 }
@@ -423,4 +423,87 @@ html {
     margin-left: 8px;
     text-decoration: underline;
     color: #111;
+}
+
+.products-layout {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 60px;
+}
+
+.filter-sidebar {
+    border-right: 1px solid #e5e7eb;
+    padding-right: 30px;
+    height: fit-content;
+}
+
+.filter-sidebar h3 {
+    font-size: 14px;
+    letter-spacing: 0.3em;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.filter-title {
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    margin-bottom: 14px;
+    color: #111;
+}
+
+.filter-group {
+    margin-bottom: 30px;
+}
+
+.filter-option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.filter-option input {
+    accent-color: black;
+}
+
+.reset-btn {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #111;
+    padding: 10px;
+    font-size: 12px;
+    letter-spacing: 0.25em;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+    background: #111;
+    color: #fff;
+}
+
+.search-bar-icon {
+    position: relative;
+    max-width: 420px;
+}
+
+.search-bar-icon input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #111;
+    padding: 12px 28px 12px 6px;
+    font-size: 13px;
+    letter-spacing: 0.25em;
+    outline: none;
+}
+
+.search-bar-icon span {
+    position: absolute;
+    right: 4px;
+    bottom: 12px;
+    font-size: 14px;
 }
